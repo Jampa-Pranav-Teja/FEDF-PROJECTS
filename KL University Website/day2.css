@@ -1,0 +1,77 @@
+.page1 {
+    background-color: antiquewhite;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    transition-duration: 1s;
+    margin-bottom: 30px;
+}
+.page1:hover {
+    box-shadow: 10px 10px grey;
+}
+.page1 h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+.page1 p{
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page2 {
+    width: 450px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.page2 h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+
+.page2 p{
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header {
+    text-align: center;
+    background-color:rgb(138, 23, 23);
+    padding: 20px 0px 20px 0px;
+}
+
+header h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+    background-color: bisque;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+nav li{
+    float: left;
+}
+nav a{
+    display: inline-block;
+    color : black;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 10px 5px 10px 5px;
+    text-decoration: none;
+
+}
+nav a:hover{
+   color: black;
+}
+nav li:hover {
+    background-color: rgb(138, 23, 23);
+}
