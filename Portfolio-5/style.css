@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #191f37;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+nav{
+    z-index: 4;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+nav .nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-container .logo h1{
+    color: white;
+}
+
+.nav-container .links a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover{
+    color: #ff521b;
+    text-shadow: 1px 1px #ff521b;
+}
+
+nav svg{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    fill: white;
+    cursor: pointer;
+    display: none;
+}
+
+nav .dropdown{
+    position: absolute;
+    top: 0;
+    background-color: #191f37;
+    width: 100%;
+    height: auto;
+    transform: translateY(-300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s linear;
+}
+
+nav .dropdown a{
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.2s linear;
+}
+
+.dropdown a:hover{
+    background-color:  black;
+    color: white;
+}
+
+/* Section Starts */
+
+section{
+    width: 100%;
+    height: 90vh;
+}
+
+section .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content .main-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+}
+
+.main-content h1{
+    font-size: clamp(2rem, 1rem + 5vw, 3rem);
+    color: white;
+}
+
+.main-content span{
+    font-size: clamp(2.5rem, 1rem + 5vw, 4rem);
+    color:#ff521b;
+    font-weight: 700;
+}
+
+.main-content p{
+    font-size: clamp(1rem, 1rem + 5vw, 1.2rem);
+    color: white;
+}
+
+.main-content .buttons{
+    width: 70%;
+    margin: 5%;
+    height: 5.5vh;
+}
+
+.buttons button{
+    cursor: pointer;
+    width: 190px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ff521b;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: 0.2s linear;
+}
+
+.buttons button:hover{
+    box-shadow: 2px 2px 30px #ff521b;
+}
+
+.content .images{
+    width: 50%;
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.images img{
+    margin-top: 40px;
+    width: 500px;
+    filter: drop-shadow(0 0 20px #ff321b);
+}
+
+@media (max-width:768px) {
+    .links{
+        display: none;
+    }
+    
+    nav svg{
+        display: block;
+    }
+
+    .nav-container .logo{
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+
+    .content{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .images img{
+        width: 120%;
+        margin-bottom: 10px;
+    }
+
+    .content .main-content {
+        max-width: 400px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-content p{
+        text-align: center;
+    }
+}
